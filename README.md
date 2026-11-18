@@ -1,4 +1,4 @@
-# GlobiQuest Scope
+# GlobiQuest Scope - – Meta VR Glasses Spatial WebXR Experience
 
 Explore countries, learn languages and bring your creativity to life in WebXR.
 
