@@ -1,0 +1,10 @@
+{
+  "provider": "Open-Meteo Elevation API",
+  "documentation": "https://open-meteo.com/en/docs/elevation-api",
+  "endpoint": "https://api.open-meteo.com/v1/elevation",
+  "retrieved": "2026-11-16",
+  "description": "City and country reference-point cache, plus settled lens-point lookups at the displayed rounded coordinates. Live lens coordinates are calculated from the head-through-lens ray and the globe local transform. Country reference values are not national average elevations. Device geolocation is never read.",
+  "cityCount": 12,
+  "countryReferenceCount": 204,
+  "runtimePointLookup": "https://api.open-meteo.com/v1/elevation?latitude={lat}&longitude={lon}"
+}

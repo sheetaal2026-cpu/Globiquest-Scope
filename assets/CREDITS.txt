@@ -1,0 +1,15 @@
+Active backdrop: plain muted slate stage; no photographic panorama.
+
+Original procedural city landmarks, telescope, travel-star navigation, word crystal and artist island made for Atlas. Telescope imagery is a live render of the app globe, not a satellite feed or astronomical data.
+
+Cafe rehearsal: original scripted practice phrases in English, Japanese, French, Spanish and Hindi. Input uses selectable replies; it does not assess speech pronunciation. Scores reflect hints and retries within this activity.
+
+Artwork and passport/cafe progress save in browser storage. PNG export happens only when selected by the user.
+
+Music: original synthesized regional sketches; instrument-inspired themes, not recordings of traditional performances.
+
+Archived 3D room source uses Three.js RoundedBoxGeometry (MIT); see THREE-LICENSE.txt.
+
+Water normal map: three.js r173 examples/textures/waternormals.jpg, https://github.com/mrdoob/three.js (MIT). Waterfall flow texture procedurally generated for Atlas.
+
+Inter font by Rasmus Andersson, SIL Open Font License 1.1; see INTER-LICENSE.txt. Source: https://github.com/rsms/inter

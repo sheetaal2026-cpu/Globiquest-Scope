@@ -1,0 +1,53 @@
+*{box-sizing:border-box}body{margin:0;background:#dce6f3;color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}a-scene{position:fixed;inset:0;width:100%;height:100%}#shell{position:fixed;inset:0;pointer-events:none;background:linear-gradient(#ffffff38,transparent 16%,transparent 88%,#ffffff18);z-index:5}.signature{position:absolute;left:16px;right:16px;top:12px;height:38px;display:flex;align-items:center;gap:12px;padding:0 17px;border:1px solid #ffffffa8;border-radius:13px;background:#f8faffb5;backdrop-filter:blur(22px) saturate(150%);box-shadow:0 4px 24px #253b6010;font-size:13px;font-weight:600;letter-spacing:-.2px}.signature b{font-size:20px;color:#007aff}.signature span{margin-left:15px;font-size:12px;font-weight:400;color:#6e6e73;border-left:1px solid #cfd6df;padding-left:20px}.signature:after{content:'Explore   View   Window';margin-left:auto;white-space:pre;font-size:11px;font-weight:400;color:#596171}.help{position:absolute;left:22px;bottom:24px;font-size:10px;line-height:1.9;color:#626d7e;padding:11px 16px;border:1px solid #ffffffb0;border-radius:14px;background:#f8faffb0;backdrop-filter:blur(20px)}.session{position:absolute;right:22px;bottom:24px;display:flex;gap:9px;align-items:center;padding:8px;border:1px solid #ffffffb0;border-radius:18px;background:#f8faffb8;backdrop-filter:blur(24px);box-shadow:0 8px 30px #24395912}.session span{font-size:11px;max-width:230px;color:#626d7e;padding:0 8px}.session button{pointer-events:auto;cursor:pointer;background:#007aff;color:#fff;border:1px solid #ffffff30;border-radius:11px;padding:11px 18px;font-size:12px;font-weight:500;box-shadow:0 2px 5px #007aff22;transition:background .15s}.session button:hover{background:#0069dd}.session button:disabled{opacity:.5}button:focus-visible{outline:3px solid #85baff;outline-offset:3px}#helpToggle{padding:10px 14px;background:#e7ecf5;color:#465267;box-shadow:none}#boot{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 40% 40%,#fff,#e4ecf8 65%,#ccd9ed);z-index:10;text-align:center}#boot span{font-size:12px;font-weight:500;color:#758398;letter-spacing:2px}h1{font-weight:500;font-size:clamp(30px,5vw,60px);letter-spacing:-2.5px;margin:20px}#boot p{font-size:13px;color:#7a8595}[hidden]{display:none!important}.a-enter-vr{display:none}body.in-vr #shell{display:none}@media(max-width:650px){.signature{left:10px;right:10px;top:10px}.signature:after{display:none}.signature span{font-size:10px;margin-left:0;padding-left:12px}.help{left:14px;bottom:100px;font-size:9px}.session{left:14px;right:14px;bottom:20px;justify-content:space-between}.session span{max-width:145px;font-size:10px}.session button{padding:11px;font-size:11px}}
+/* Quiet stage for the tiny world: no room photograph. */
+body{background:#eef1ef}#shell{background:none}.signature:after{content:none}.signature{right:auto;min-width:230px}.help{display:none}#help:not([hidden]){display:block}.session span{max-width:175px}#play{background:#eef2e9;color:#3e594e;box-shadow:none;border-color:#d5dfd4}@media(max-width:650px){.session span{display:none}.session{gap:6px}.session button{flex:1}#helpToggle{flex:0}.signature{min-width:190px}}
+/* Readable spatial stage: solid text surfaces, one tool panel, separate dock. */
+body{background:#42566b}#shell{background:none}.signature{background:#f7f9fcf2;border-color:#d8e0e9}.session{right:20px;bottom:auto;top:14px;background:#f7f9fcf2}.session span{display:none}#spatialDock{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;gap:5px;padding:8px;background:#eef3faed;backdrop-filter:blur(15px);border:1px solid #fff;border-radius:20px;box-shadow:0 12px 35px #26374c30;pointer-events:auto}#spatialDock button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:61px;height:62px;padding:5px 8px;border:0;border-radius:13px;background:transparent;color:#24354a;font:600 11px -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer}#spatialDock button span{font-size:23px;line-height:1.1;font-weight:400}#spatialDock button:hover{background:#dbe6f4}#spatialDock button[aria-pressed=true]{background:#126bc7;color:white}#spatialDock button:focus-visible{outline:3px solid #73b2f0;outline-offset:1px}.help{bottom:110px;max-width:310px;background:#f8fafcf5;color:#334155}body.in-vr #spatialDock{display:none}@media(max-width:650px){.signature{top:10px;left:10px;min-width:150px}.signature span{display:none}.session{top:10px;bottom:auto;left:auto;right:10px;padding:5px;gap:3px}.session #play{display:none}.session button{padding:9px}#spatialDock{bottom:15px;padding:5px;gap:1px;border-radius:16px;max-width:96vw}#spatialDock button{min-width:43px;height:55px;font-size:9px;padding:4px}#spatialDock button span{font-size:21px}}
+#feedback{position:absolute;top:75px;left:50%;transform:translateX(-50%);padding:12px 18px;max-width:min(480px,90vw);background:#f8fafcf5;color:#20324a;border:1px solid #c6d2e0;border-radius:12px;box-shadow:0 8px 25px #18283c25;font-size:13px;line-height:1.5;text-align:center}
+
+#spatialDock{max-width:calc(100vw - 24px);overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}#spatialDock button{flex-shrink:0}
+
+#spatialDock button[aria-pressed=true]{background:#e0e7ee;color:#263548}
+
+/* Soft, playful Tiny World window chrome. */
+.signature,.session{border:1px solid #ffffffed;border-radius:23px;background:linear-gradient(135deg,#fcfef9f5,#e4f1ebee);box-shadow:0 7px 26px #345d4b17;backdrop-filter:blur(18px) saturate(115%)}
+.signature:before{content:'';width:7px;height:7px;flex-shrink:0;border-radius:50%;background:#ee9c9e;box-shadow:12px 0 #edcd8b,24px 0 #9ecbb3;margin-right:24px}
+.signature b{color:#709f8b}.signature span{color:#71887e}
+#spatialDock{background:linear-gradient(135deg,#f8fdf7f0,#e0efe7eb);border-color:#fff;border-radius:25px;padding:9px;gap:5px;box-shadow:0 10px 32px #345d4b25}
+#spatialDock button{border-radius:17px;color:#344c43;transition:background .16s,transform .16s,box-shadow .16s}
+#spatialDock button:hover{background:#fafff9;transform:translateY(-2px)}#spatialDock button[aria-pressed=true]{background:#fffdf6;color:#344b40;box-shadow:0 3px 10px #43644e17,inset 0 0 0 1px #d5e5d9}
+#spatialDock button:focus-visible{outline:3px solid #aacdb9;outline-offset:2px}#helpToggle{border-radius:14px}
+@media(prefers-reduced-motion:reduce){#spatialDock button{transition:none}#spatialDock button:hover{transform:none}}
+
+#spatialDock{padding-top:19px}#spatialDock:before{content:'';position:absolute;top:8px;left:15px;width:5px;height:5px;border-radius:50%;background:#ee9c9e;box-shadow:9px 0 #edcd8b,18px 0 #9ecbb3}
+@font-face{font-family:Inter;src:url('../assets/inter-variable.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display',Inter,'Helvetica Neue',Arial,sans-serif}
+/* Compact dock: it can collapse completely without losing the launcher. */
+#spatialDock{max-width:calc(100vw - 90px);padding:15px 5px 4px;gap:2px;border-radius:20px;bottom:16px;scrollbar-width:none}#spatialDock::-webkit-scrollbar{display:none}#spatialDock button{min-width:43px;height:45px;padding:3px 5px;gap:3px;border-radius:13px;font-size:10px}#spatialDock button span{font-size:19px}#spatialDock.is-minimized{display:none}
+#dockToggle{position:absolute;bottom:29px;right:12px;width:29px;height:29px;display:grid;place-items:center;border:1px solid #d8e6dc;border-radius:50%;background:#f7fcf7;color:#3d574b;font:500 20px -apple-system,BlinkMacSystemFont,Inter,sans-serif;box-shadow:0 3px 12px #345d4b1c;pointer-events:auto;cursor:pointer}#dockToggle.is-minimized{bottom:16px;right:auto;left:50%;transform:translateX(-50%);width:auto;height:38px;padding:0 16px;border-radius:18px;font-size:12px}body.in-vr #dockToggle{display:none}#dockToggle:focus-visible{outline:3px solid #aacdb9;outline-offset:2px}
+
+/* Frosted glass chrome; content and labels retain full opacity. */
+.signature,.session,#spatialDock,#feedback,#dockToggle{background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(231,245,238,.66));border:1px solid rgba(255,255,255,.86);box-shadow:0 12px 34px rgba(31,55,44,.16),inset 0 1px 0 rgba(255,255,255,.92);-webkit-backdrop-filter:blur(24px) saturate(135%);backdrop-filter:blur(24px) saturate(135%)}
+#spatialDock button{background:rgba(249,255,251,.38);border-color:rgba(255,255,255,.6);color:#284735}#spatialDock button[aria-pressed=true]{background:rgba(225,242,230,.9);box-shadow:inset 0 0 0 1px rgba(130,166,145,.45)}
+
+/* Keep desktop navigation beside the left room corner, visible on each load. */
+#spatialDock{left:16px;top:80px;bottom:auto;transform:none;width:176px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 104px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow-y:auto;overflow-x:hidden;padding:22px 7px 8px;gap:5px}#spatialDock button{width:100%;min-width:0;height:49px;font-size:11px}#spatialDock.is-minimized{display:none}#dockToggle{left:166px;right:auto;top:82px;bottom:auto;width:24px;height:24px}#dockToggle.is-minimized{left:16px;top:80px;bottom:auto;transform:none;width:176px;height:38px}body.in-vr #spatialDock,body.in-vr #dockToggle{display:none}
+
+/* Navigation has no implied default selections. */
+#spatialDock button,#spatialDock button[aria-pressed=true]{background:#fff;box-shadow:none;border:1px solid #e2e9e6}#spatialDock button:hover,#spatialDock button[data-user-selected=true]{background:#dceee3;border-color:#91bea3}
+
+/* Landing view exposes only Enter XR; dock buttons remain as XR action sources. */
+#shell .signature,#spatialDock,#dockToggle,#help{display:none!important}
+#shell .session>:not(#enter){display:none!important}
+#shell .session{left:auto;right:20px;top:16px;bottom:auto;min-width:0;padding:0;gap:0;border:0;background:none;box-shadow:none;backdrop-filter:none}
+#shell .session #enter{display:inline-flex;align-items:center;justify-content:center;flex:none}
+
+/* Start in the supplied room, without an observatory splash page. */
+html,body{background:#ddcfb9 url('/assets/background.8117bac133d0.jpg') center/cover no-repeat fixed}
+#boot{display:none!important}
+a-scene{background:transparent!important}
+a-scene canvas{opacity:0}
+body.scene-ready a-scene canvas{opacity:1}
+
+/* The landing page is the scene only, without page controls. */
+#shell{display:none!important}

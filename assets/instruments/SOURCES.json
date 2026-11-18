@@ -1,0 +1,50 @@
+[
+  {
+    "name": "piano-low",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Keys/Upright%20Piano/Player_dyn2_rr1_012.wav",
+    "bytes": 30840,
+    "peak": 329.3
+  },
+  {
+    "name": "piano-mid",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Keys/Upright%20Piano/Player_dyn2_rr1_020.wav",
+    "bytes": 30840,
+    "peak": 277.3
+  },
+  {
+    "name": "piano-high",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Keys/Upright%20Piano/Player_dyn2_rr1_026.wav",
+    "bytes": 30840,
+    "peak": 556.0
+  },
+  {
+    "name": "flute",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Woodwinds/Flute/susNV/LDFlute_susNV_C4_v3_1.wav",
+    "bytes": 30932,
+    "peak": 522.7
+  },
+  {
+    "name": "bells",
+    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Idiophones/Struck%20Idiophones/Glockenspiel/glock_medium_C5_01.wav",
+    "bytes": 30764,
+    "peak": 1053.3
+  },
+  {
+    "name": "kick",
+    "url": "https://raw.githubusercontent.com/sgossner/VCSL/master/Membranophones/Struck%20Membranophones/Bass%20Drum%201/BDrumNew_hit_v3_rr1_Sum.wav",
+    "bytes": 21644,
+    "peak": 86.7
+  },
+  {
+    "name": "snare",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Percussion/Snare2-HitSN_v3_rr1_Sum.wav",
+    "bytes": 18284,
+    "peak": 54.7
+  },
+  {
+    "name": "tick",
+    "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/master/Percussion/Sleighbells_Hit_v1_rr1_Mid.wav",
+    "bytes": 25724,
+    "peak": 6937.3
+  }
+]
